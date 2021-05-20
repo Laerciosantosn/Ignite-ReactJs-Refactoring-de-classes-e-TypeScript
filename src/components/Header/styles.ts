@@ -2,15 +2,28 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #c72828;
-  padding: 30px 0;
+  padding: 1.875rem 2rem;
 
   header {
-    width: 1280px;
+    max-width: 80rem;
     margin: 0 auto;
-    padding: 0 0 160px;
+    padding: 0 0 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px){
+      padding: 0 1rem;
+      flex-direction: column;
+
+      nav {
+        div {
+          button {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
 
     nav {
       div {
