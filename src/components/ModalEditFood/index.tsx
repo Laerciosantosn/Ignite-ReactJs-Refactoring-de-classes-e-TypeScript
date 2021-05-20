@@ -1,19 +1,11 @@
 import React, { useCallback, useRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
+import { FoodPlate } from '../../types';
 
 import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
-
-interface FoodPlate {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-}
 
 type EditFoodData = Omit<FoodPlate, 'id' | 'available'>;
 

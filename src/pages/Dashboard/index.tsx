@@ -5,17 +5,10 @@ import api from '../../services/api';
 import Food from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
+import { FoodPlate } from '../../types';
 
 import { FoodsContainer } from './styles';
 
-interface FoodPlate {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-}
 
 const Dashboard: React.FC = () => {
 
